@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>金帐本商城</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="style.css?20150929">
+    <script type="text/javascript" src="js/jquery.min.js?20150723"></script>
+    <script type="text/javascript" src="js/plugin.js?20150723"></script>
+    <script type="text/javascript" src="js/common.js?20150723"></script>
+    
+   
+</head>
+<body>
+<!--    顶部-->
+    <div class="topbar">                         
+            <div class="wrap">
+                <ul class="float-left">
+                    <li class="weibo"><a href="">官方微博</a></li>
+                    <li class="line">|</li>
+                    <li class="kefu"><a href="">客服中心</a></li>
+                    <li class="line">|</li>
+                    <li class="weizhi"><a href="">东莞市</a></li>
+                   <li class="line">|</li>
+                    <li><a href="">切换</a></li>
+                </ul>
+                <ul class="user-info">
+                    <li>您好，欢迎来到金账本！</li>
+                    <li class="is-login already-login hide">
+                        <a href=""></a>
+                    </li>
+                    <li class="logout is-login already-login hide"><a href="">安全退出</a></li>
+                    <li class="no-login hide" style="display: list-item;">
+                        【<a class="login" href="">登录</a>】
+                        【<a class="register" href="">免费注册</a>】
+                    </li>
+                    
+                    <li><a href="">我的订单</a></li>
+                    <li class="line">|</li>
+                    <li class="cart">
+                        <a href=""><span>购物车</span><em>0</em></a>
+                    </li>
+                    
+                </ul>
+            </div>  
+        </div>
+<!-- LOGO 搜索 电话-->
+    <div class="middle index-middle">
+            <div class="wrap">
+                <a class="logo" href=""><img src="images/logo.png"></a>
+                <form method="get" action="/?">
+                    <input type="hidden" value="search" name="m">
+                    <input type="hidden" value="index" name="c">
+                    <input type="hidden" value="init" name="a">
+                    <input type="hidden" value="all" name="time">
+                    <input type="hidden" id="search_typeid" value="57" name="typeid">
+                    <input type="hidden" id="siteid" value="1" name="siteid">
+                    <div class="search">
+                        <div class="text">
+                            <div class="select">
+                               
+                               
+                            </div>
+                            <div class="input">
+                                <input type="text" value="" name="q" placeholder="公司注册">   
+                            </div>
+                        </div>
+                        <div class="submit">
+                            <input type="submit" value="搜 索">
+                        </div>
+                    </div>
+                </form>
+                <div class="tel">4000890066</div>
+                <div class="mascot"><i></i></div>
+            </div>
+        </div>
+    
+<!--    导航 -->
+    <div class="full-nav">
+            <div class="nav">
+                <div class="product-menu index-product-menu new-nav">
+                    <span><a href="">全部服务项目</a></span>
+                    <div class="sub-menu">
+                        <ul>
+                              
+                                                                                    <li>
+                                <a class="cate" href=""><h2>公司注册/变更/年报</h2></a>  
+                                <em class="child">
+                                                                                                            <a href="">公司注册</a>
+                                                                                                            <a href="">公司变更</a>
+                                                                                                            <a href="">公司年报</a>
+                                      
+                                </em>
+                            </li>
+                               
+                                                                                    <li>
+                                <a class="cate" href=""><h2>财会税务</h2></a>  
+                                <em class="child">
+                                                                                                            <a href="">税务服务</a>
+                                                                                                            <a href="">代理记账</a>
+                                                                                                            <a href="">人事社保</a>
+                                      
+                                </em>
+                            </li>
+                               
+                                                                                    <li>
+                                <a class="cate" href=""><h2>知识产权</h2></a>  
+                                <em class="child">
+                                                                                                            <a href="">商标</a>
+                                                                                                            <a href="">专利</a>
+                                                                                                            <a href="">著作权</a>
+                                      
+                                </em>
+                            </li>
+                               
+                                                                                    <li>
+                                <a class="cate" href=""><h2>法律服务</h2></a>  
+                                <em class="child">
+                                                                                                            <a href="">合同撰写</a>
+                                                                                                            <a href="">合同审核</a>
+                                                                                                            <a href="">合伙协议</a>
+                                                                                                            <a href="">股权协议</a>
+                                                                                                            <a href="">公司章程</a>
+                                                                                                            <a href="">律师函</a>
+                                                                                                            <a href="">法律维权</a>
+                                                                                                            <a href="">法律顾问</a>
+                                      
+                                </em>
+                            </li>
+                               
+                               
+                                                                                    <li>
+                                <a class="cate" href=""><h2>网站建设</h2></a>  
+                                <em class="child">
+                                                                                                            <a class="long" href="">建设网站</a>
+                                                                                                            <a class="long" href="">网站推广</a>
+                                                                                                            <a class="long" href="">网站维护</a>
+                                                                                                          
+                                      
+                                </em>
+                            </li>
+                               
+                              
+                                         
+                        </ul>
+                    </div>
+                </div>
+              
+                <ul class="navbar">
+                    <li class="index"><a href="">首页</a></li>
+                                                            <li><a title="" href="">优惠套餐</a></li>
+                                        <li><a title="" href="">精品服务</a></li>
+                                        <li><a title="" href="">问答</a></li>
+                                        <li><a title="" href="">百科</a></li>
+                                        <li><a title="" href="">成功案例</a></li>
+                                        <li><a title="" href="">购买指南</a></li>
+                    
+                                        <li><a title="" href="">关于我们</a></li>
+                                                        </ul>
+            </div>
+        </div>
+    
+<!--    焦点图-->
+    <div class="index-banner new-banner">
+	<div class="bd">
+		<ul style="position: relative; width: 100%; height: 442px;">
+			<li style="position: absolute; width: 100%; left: 0px; top: 0px; display: none; background: url(http://www.gongsibao.com/statics/images/home/banner/7.jpg) 50% 0%;">
+				<a href="/zhuanti/september" target="_blank"></a>
+			</li>
+			<li style="position: absolute; width: 100%; left: 0px; top: 0px; display: none; background: url(http://www.gongsibao.com/statics/images/home/banner/8.jpg) 50% 0%;">
+				<a href="/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=507" target="_blank"></a>
+			</li>
+			<li style="position: absolute; width: 100%; left: 0px; top: 0px; background: url(http://www.gongsibao.com/statics/images/home/banner/4.jpg) 50% 0%;">
+				<a href="/manzisanban" target="_blank"></a>
+			</li>
+			<li style="position: absolute; width: 100%; left: 0px; top: 0px; display: none; background: url(http://www.gongsibao.com/statics/images/home/banner/6.jpg) 50% 0%;">
+				<a href="/zhuanti/taocan" target="_blank"></a>
+			</li>
+			<li style="position: absolute; width: 100%; left: 0px; top: 0px; display: none; background: url(http://www.gongsibao.com/statics/images/home/banner/3.jpg) 50% 0%;">
+				<a href="/help/ddfw/detail/6.html" target="_blank"></a>
+			</li>
+
+		</ul>
+	</div>
+	<div class="hd">
+		<ul><li class="on"></li><li class=""></li><li ></li><li></li></ul>
+	</div>
+</div>
+<!--   保障 -->
+    <div class="baozhang ">
+    <div class="wrap clear">
+        <div class="box bg1">
+            <div class="tit">行业标准，平台交易有担保</div>
+        <div class="des">害怕买贵了? 别怕,随时可退单！<br>
+效果不满意? 没事,随时可申诉！<br>
+担心有损失? 别慌,平台先赔付！</div>
+        </div>
+        <div class="line"></div>
+          <div class="box bg2">
+            <div class="tit">行业标准，平台交易有担保</div>
+        <div class="des">害怕买贵了? 别怕,随时可退单！<br>
+效果不满意? 没事,随时可申诉！<br>
+担心有损失? 别慌,平台先赔付！</div>
+        </div>
+        <div class="line"></div>
+          <div class="box bg3">
+            <div class="tit">行业标准，平台交易有担保</div>
+        <div class="des">害怕买贵了? 别怕,随时可退单！<br>
+效果不满意? 没事,随时可申诉！<br>
+担心有损失? 别慌,平台先赔付！</div>
+        </div>
+        </div>
+    
+    </div>
+    
+<!--    公司注册-->
+    <div class="wrap">
+    <div class="index-column">
+            <div class="index-columntitle">
+               <h3 id="title_1" name="title_1">公司注册</h3>
+                  <ul class="index-columntitle-right">    
+                  <li><a target="_blank" href="">商标注册</a></li>
+                  <li><a target="_blank" href="">商标案件</a></li>
+                  <li><a target="_blank" href="">国际注册</a></li>
+                  <li><a target="_blank" href="">商标设计</a></li>
+<li onmouseover="revealcat(38)" onmouseout="hidecat(38)">
+                        <div class="more" onmouseout="this.className='more'" onmouseover="this.className='more active_more'">
+                          <p>
+                            <a href="#" target="_blank">更多</a>
+                          </p>
+                          <ul class="more_ct">                                           
+                          <li><a target="_blank" href="">补发证明</a></li>                           
+                          <li><a target="_blank" href="">其他服务</a></li>     
+                </ul>
+              </div>
+                    </li>   <div style="clear:both;"></div>
+                </ul>
+
+            </div>
+                        <ul class="index-trademark" style="height:362px;">
+                                            	<li class="hover">
+                    <div class="index-trademark-img">
+                        <a target="_blank" href=""><img title="商标注册申请代理服务" alt="商标注册申请代理服务"  src="images/gs_icon1.png"></a>
+                    </div>
+                    <h3>商标注册</h3>
+                   
+                    <h4>
+                    	本站价<span>￥1590.00</span>
+                    </h4>
+                    <p>已有60508人购买</p>
+
+                    <div class="index-trademarkbutton" id="g_id8">
+                    	<a class="button button04" target="_blank" href="/info-8.html">查看详情</a>
+                    </div>
+                    <div class="index-trademark-comment">
+                        <a href=""><span><img src="images/star.png"></span>  <span>    （11个评论）</span></a>
+                    </div>                                               
+                                             
+
+                </li>
+
+                                <div class="index-trademark-xian"></div>             	
+	<li class="hover">
+                    <div class="index-trademark-img">
+                        <a target="_blank" href=""><img title="商标注册申请代理服务" alt="商标注册申请代理服务"  src="images/gs_icon2.png"></a>
+                    </div>
+                    <h3>商标注册</h3>
+                   
+                    <h4>
+                    	本站价<span>￥1590.00</span>
+                    </h4>
+                    <p>已有60508人购买</p>
+
+                    <div class="index-trademarkbutton" id="g_id8">
+                    	<a class="button button04" target="_blank" href="/info-8.html">查看详情</a>
+                    </div>
+                    <div class="index-trademark-comment">
+                        <a href=""><span><img src="images/star.png"></span>  <span>    （11个评论）</span></a>
+                    </div>                                               
+                                               
+
+                </li>
+
+                                <div class="index-trademark-xian"></div>             	
+	<li class="hover">
+                    <div class="index-trademark-img">
+                        <a target="_blank" href=""><img title="商标注册申请代理服务" alt="商标注册申请代理服务"  src="images/gs_icon3.png"></a>
+                    </div>
+                    <h3>商标注册</h3>
+                   
+                    <h4>
+                    	本站价<span>￥1590.00</span>
+                    </h4>
+                    <p>已有60508人购买</p>
+
+                    <div class="index-trademarkbutton" id="g_id8">
+                    	<a class="button button04" target="_blank" href="/info-8.html">查看详情</a>
+                    </div>
+                     <div class="index-trademark-comment">
+                        <a href=""><span><img src="images/star.png"></span>  <span>    （11个评论）</span></a>
+                    </div>                                               
+                                               
+
+                </li>
+
+                                <div class="index-trademark-xian"></div>             	
+	<li class="hover">
+                    <div class="index-trademark-img">
+                        <a target="_blank" href=""><img title="商标注册申请代理服务" alt="商标注册申请代理服务"  src="images/gs_icon4.png"></a>
+                    </div>
+                    <h3>商标注册</h3>
+                   
+                    <h4>
+                    	本站价<span>￥1590.00</span>
+                    </h4>
+                    <p>已有60508人购买</p>
+
+                    <div class="index-trademarkbutton" id="g_id8">
+                    	<a class="button button04" target="_blank" href="/info-8.html">查看详情</a>
+                    </div>
+                    <div class="index-trademark-comment">
+                        <a href=""><span><img src="images/star.png"></span>  <span>    （11个评论）</span></a>
+                    </div>                                               
+
+                </li>
+
+                                </ul>
+                    </div>
+        </div>
+    
+    
+    <!--    财会税务-->
+    <div class="wrap">
+    <div class="index-column">
+            <div class="index-columntitle">
+               <h3 id="title_1" name="title_1">财会税务</h3>
+                  <ul class="index-columntitle-right">    
+                  <li><a target="_blank" href="">商标注册</a></li>
+                  <li><a target="_blank" href="">商标案件</a></li>
+                  <li><a target="_blank" href="">国际注册</a></li>
+                  <li><a target="_blank" href="">商标设计</a></li>
+<li onmouseover="revealcat(38)" onmouseout="hidecat(38)">
+                        <div class="more" onmouseout="this.className='more'" onmouseover="this.className='more active_more'">
+                          <p>
+                            <a href="#" target="_blank">更多</a>
+                          </p>
+                          <ul class="more_ct">                                           
+                          <li><a target="_blank" href="">补发证明</a></li>                           
+                          <li><a target="_blank" href="">其他服务</a></li>     
+                </ul>
+              </div>
+                    </li>   <div style="clear:both;"></div>
+                </ul>
+
+            </div>
+                        <ul class="index-trademark" style="height:392px;">
+                                            	<li class="hover">
+                    <div class="index-trademark-img">
+                        <a target="_blank" href=""><img title="商标注册申请代理服务" alt="商标注册申请代理服务"  src="images/ck_icon1.png"></a>
+                    </div>
+                    <h3>一般纳税人企业代理记账<br>(30笔建账/月)</h3>
+                   
+                    <h4>
+                    	本站价<span>￥1590.00</span>
+                    </h4>
+                    <p>已有60508人购买</p>
+
+                    <div class="index-trademarkbutton" id="g_id8">
+                    	<a class="button button04" target="_blank" href="/info-8.html">查看详情</a>
+                    </div>
+                    <div class="index-trademark-comment">
+                        <a href=""><span><img src="images/star.png"></span>  <span>    （11个评论）</span></a>
+                    </div>                                               
+                                             
+
+                </li>
+
+                                <div class="index-trademark-xian"></div>             	
+	<li class="hover">
+                    <div class="index-trademark-img">
+                        <a target="_blank" href=""><img title="商标注册申请代理服务" alt="商标注册申请代理服务"  src="images/ck_icon2.png"></a>
+                    </div>
+                    <h3>一般纳税人企业代理记账<br>(30笔建账/月)</h3>
+                   
+                    <h4>
+                    	本站价<span>￥1590.00</span>
+                    </h4>
+                    <p>已有60508人购买</p>
+
+                    <div class="index-trademarkbutton" id="g_id8">
+                    	<a class="button button04" target="_blank" href="/info-8.html">查看详情</a>
+                    </div>
+                    <div class="index-trademark-comment">
+                        <a href=""><span><img src="images/star.png"></span>  <span>    （11个评论）</span></a>
+                    </div>                                               
+                                               
+
+                </li>
+
+                                <div class="index-trademark-xian"></div>             	
+	<li class="hover">
+                    <div class="index-trademark-img">
+                        <a target="_blank" href=""><img title="商标注册申请代理服务" alt="商标注册申请代理服务"  src="images/ck_icon3.png"></a>
+                    </div>
+                     <h3>一般纳税人企业代理记账<br>(30笔建账/月)</h3>
+                   
+                    <h4>
+                    	本站价<span>￥1590.00</span>
+                    </h4>
+                    <p>已有60508人购买</p>
+
+                    <div class="index-trademarkbutton" id="g_id8">
+                    	<a class="button button04" target="_blank" href="/info-8.html">查看详情</a>
+                    </div>
+                     <div class="index-trademark-comment">
+                        <a href=""><span><img src="images/star.png"></span>  <span>    （11个评论）</span></a>
+                    </div>                                               
+                                               
+
+                </li>
+
+                                <div class="index-trademark-xian"></div>             	
+	<li class="hover">
+                    <div class="index-trademark-img">
+                        <a target="_blank" href=""><img title="商标注册申请代理服务" alt="商标注册申请代理服务"  src="images/ck_icon4.png"></a>
+                    </div>
+                    <h3>一般纳税人企业代理记账<br>(30笔建账/月)</h3>
+                   
+                    <h4>
+                    	本站价<span>￥1590.00</span>
+                    </h4>
+                    <p>已有60508人购买</p>
+
+                    <div class="index-trademarkbutton" id="g_id8">
+                    	<a class="button button04" target="_blank" href="/info-8.html">查看详情</a>
+                    </div>
+                    <div class="index-trademark-comment">
+                        <a href=""><span><img src="images/star.png"></span>  <span>    （11个评论）</span></a>
+                    </div>                                               
+
+                </li>
+
+                                </ul>
+                    </div>
+        </div>
+    
+    <!--    会计培训-->
+    <div class="wrap">
+    <div class="index-column">
+            <div class="index-columntitle">
+               <h3 id="title_1" name="title_1">会计培训</h3>
+                  <ul class="index-columntitle-right">    
+                  <li><a target="_blank" href="">商标注册</a></li>
+                  <li><a target="_blank" href="">商标案件</a></li>
+                  <li><a target="_blank" href="">国际注册</a></li>
+                  <li><a target="_blank" href="">商标设计</a></li>
+<li onmouseover="revealcat(38)" onmouseout="hidecat(38)">
+                        <div class="more" onmouseout="this.className='more'" onmouseover="this.className='more active_more'">
+                          <p>
+                            <a href="#" target="_blank">更多</a>
+                          </p>
+                          <ul class="more_ct">                                           
+                          <li><a target="_blank" href="">补发证明</a></li>                           
+                          <li><a target="_blank" href="">其他服务</a></li>     
+                </ul>
+              </div>
+                    </li>   <div style="clear:both;"></div>
+                </ul>
+
+            </div>
+                        <ul class="index-trademark" style="height:356px;">
+                                            	<li class="hover">
+                    <div class="index-trademark-img">
+                        <a target="_blank" href=""><img title="商标注册申请代理服务" alt="商标注册申请代理服务"  src="images/kj_icon1.png"></a>
+                    </div>
+                    <h3>商标注册</h3>
+                   
+                    <h4>
+                    	本站价<span>￥1590.00</span>
+                    </h4>
+                    <p>已有60508人购买</p>
+
+                    <div class="index-trademarkbutton" id="g_id8">
+                    	<a class="button button04" target="_blank" href="/info-8.html">查看详情</a>
+                    </div>
+                    <div class="index-trademark-comment">
+                        <a href=""><span><img src="images/star.png"></span>  <span>    （11个评论）</span></a>
+                    </div>                                               
+                                             
+
+                </li>
+
+                                <div class="index-trademark-xian"></div>             	
+	<li class="hover">
+                    <div class="index-trademark-img">
+                        <a target="_blank" href=""><img title="商标注册申请代理服务" alt="商标注册申请代理服务"  src="images/kj_icon2.png"></a>
+                    </div>
+                    <h3>商标注册</h3>
+                   
+                    <h4>
+                    	本站价<span>￥1590.00</span>
+                    </h4>
+                    <p>已有60508人购买</p>
+
+                    <div class="index-trademarkbutton" id="g_id8">
+                    	<a class="button button04" target="_blank" href="/info-8.html">查看详情</a>
+                    </div>
+                    <div class="index-trademark-comment">
+                        <a href=""><span><img src="images/star.png"></span>  <span>    （11个评论）</span></a>
+                    </div>                                               
+                                               
+
+                </li>
+
+                                <div class="index-trademark-xian"></div>             	
+	<li class="hover">
+                    <div class="index-trademark-img">
+                        <a target="_blank" href=""><img title="商标注册申请代理服务" alt="商标注册申请代理服务"  src="images/kj_icon3.png"></a>
+                    </div>
+                    <h3>商标注册</h3>
+                   
+                    <h4>
+                    	本站价<span>￥1590.00</span>
+                    </h4>
+                    <p>已有60508人购买</p>
+
+                    <div class="index-trademarkbutton" id="g_id8">
+                    	<a class="button button04" target="_blank" href="/info-8.html">查看详情</a>
+                    </div>
+                     <div class="index-trademark-comment">
+                        <a href=""><span><img src="images/star.png"></span>  <span>    （11个评论）</span></a>
+                    </div>                                               
+                                               
+
+                </li>
+
+                                <div class="index-trademark-xian"></div>             	
+	<li class="hover">
+                    <div class="index-trademark-img">
+                        <a target="_blank" href=""><img title="商标注册申请代理服务" alt="商标注册申请代理服务"  src="images/kj_icon4.png"></a>
+                    </div>
+                    <h3>商标注册</h3>
+                   
+                    <h4>
+                    	本站价<span>￥1590.00</span>
+                    </h4>
+                    <p>已有60508人购买</p>
+
+                    <div class="index-trademarkbutton" id="g_id8">
+                    	<a class="button button04" target="_blank" href="/info-8.html">查看详情</a>
+                    </div>
+                    <div class="index-trademark-comment">
+                        <a href=""><span><img src="images/star.png"></span>  <span>    （11个评论）</span></a>
+                    </div>                                               
+
+                </li>
+
+                                </ul>
+                    </div>
+        </div>
+    
+   <!--    商标注册-->
+    <div class="wrap">
+    <div class="index-column">
+            <div class="index-columntitle">
+               <h3 id="title_1" name="title_1">商标注册</h3>
+                  <ul class="index-columntitle-right">    
+                  <li><a target="_blank" href="">商标注册</a></li>
+                  <li><a target="_blank" href="">商标案件</a></li>
+                  <li><a target="_blank" href="">国际注册</a></li>
+                  <li><a target="_blank" href="">商标设计</a></li>
+<li onmouseover="revealcat(38)" onmouseout="hidecat(38)">
+                        <div class="more" onmouseout="this.className='more'" onmouseover="this.className='more active_more'">
+                          <p>
+                            <a href="#" target="_blank">更多</a>
+                          </p>
+                          <ul class="more_ct">                                           
+                          <li><a target="_blank" href="">补发证明</a></li>                           
+                          <li><a target="_blank" href="">其他服务</a></li>     
+                </ul>
+              </div>
+                    </li>   <div style="clear:both;"></div>
+                </ul>
+
+            </div>
+                        <ul class="index-trademark" style="height:362px;">
+                                            	<li class="hover">
+                    <div class="index-trademark-img">
+                        <a target="_blank" href=""><img title="商标注册申请代理服务" alt="商标注册申请代理服务"  src="images/sb_icon1.png"></a>
+                    </div>
+                    <h3>商标注册</h3>
+                   
+                    <h4>
+                    	本站价<span>￥1590.00</span>
+                    </h4>
+                    <p>已有60508人购买</p>
+
+                    <div class="index-trademarkbutton" id="g_id8">
+                    	<a class="button button04" target="_blank" href="/info-8.html">查看详情</a>
+                    </div>
+                    <div class="index-trademark-comment">
+                        <a href=""><span><img src="images/star.png"></span>  <span>    （11个评论）</span></a>
+                    </div>                                               
+                                             
+
+                </li>
+
+                                <div class="index-trademark-xian"></div>             	
+	<li class="hover">
+                    <div class="index-trademark-img">
+                        <a target="_blank" href=""><img title="商标注册申请代理服务" alt="商标注册申请代理服务"  src="images/sb_icon2.png"></a>
+                    </div>
+                    <h3>商标注册</h3>
+                   
+                    <h4>
+                    	本站价<span>￥1590.00</span>
+                    </h4>
+                    <p>已有60508人购买</p>
+
+                    <div class="index-trademarkbutton" id="g_id8">
+                    	<a class="button button04" target="_blank" href="/info-8.html">查看详情</a>
+                    </div>
+                    <div class="index-trademark-comment">
+                        <a href=""><span><img src="images/star.png"></span>  <span>    （11个评论）</span></a>
+                    </div>                                               
+                                               
+
+                </li>
+
+                                <div class="index-trademark-xian"></div>             	
+	<li class="hover">
+                    <div class="index-trademark-img">
+                        <a target="_blank" href=""><img title="商标注册申请代理服务" alt="商标注册申请代理服务"  src="images/sb_icon3.png"></a>
+                    </div>
+                    <h3>商标注册</h3>
+                   
+                    <h4>
+                    	本站价<span>￥1590.00</span>
+                    </h4>
+                    <p>已有60508人购买</p>
+
+                    <div class="index-trademarkbutton" id="g_id8">
+                    	<a class="button button04" target="_blank" href="/info-8.html">查看详情</a>
+                    </div>
+                     <div class="index-trademark-comment">
+                        <a href=""><span><img src="images/star.png"></span>  <span>    （11个评论）</span></a>
+                    </div>                                               
+                                               
+
+                </li>
+
+                                <div class="index-trademark-xian"></div>             	
+	<li class="hover">
+                    <div class="index-trademark-img">
+                        <a target="_blank" href=""><img title="商标注册申请代理服务" alt="商标注册申请代理服务"  src="images/sb_icon4.png"></a>
+                    </div>
+                    <h3>商标注册</h3>
+                   
+                    <h4>
+                    	本站价<span>￥1590.00</span>
+                    </h4>
+                    <p>已有60508人购买</p>
+
+                    <div class="index-trademarkbutton" id="g_id8">
+                    	<a class="button button04" target="_blank" href="/info-8.html">查看详情</a>
+                    </div>
+                    <div class="index-trademark-comment">
+                        <a href=""><span><img src="images/star.png"></span>  <span>    （11个评论）</span></a>
+                    </div>                                               
+
+                </li>
+
+                                </ul>
+                    </div>
+        </div>
+    
+<!--    客服声音-->
+    <div class="index-voice clear">
+    <div class="pub-title1 center">
+        <h4>　　　客户<em>声音</em> ▪ <span><em>V</em>OICE <em>O</em>F <em>T</em>HE <em>C</em>USTOMER</span></h4>
+        <i class="i-nav1"></i>
+    </div>
+
+    <div class="scroll">
+        <a class="next"></a>
+        <div class="bd">
+            <div class="tempWrap" style="overflow:hidden; position:relative; width:1140px"><div class="tempWrap" style="overflow:hidden; position:relative; width:1140px"><ul class="picList" style="width: 2660px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: -380px;"><li style="float: left; width: 310px;" class="clone">
+                    <div class="head">
+                        <a><img height="214" width="310" src="http://www.gongsibao.com/statics/images/home/picture-t2.jpg" alt="公司（工商）注册"></a>
+                    </div>
+                    <div class="con">
+                        <p><span>魏华</span>    <span>运维经理</span></p>
+                        <p>北京，<a>正和岛</a></p>
+                    </div>
+                    <div class="info">
+                        <p>中国商界第一高端人脉与网络社交平台认准公司宝，希望未来继续携手，蒸蒸日上。</p>
+                    </div>
+                </li><li class="clone" style="float: left; width: 310px;">
+                <div class="head">
+                    <a><img height="214" width="310" src="http://www.gongsibao.com/statics/images/home/picture-t3.jpg" alt="公司（工商）注册"></a>
+                </div>
+                <div class="con">
+                    <p><span>郭大兵</span>    <span>总经理</span></p>
+                    <p>香港，<a>八零互联</a></p>
+                </div>
+                <div class="info">
+                    <p>公司宝的团队很好，服务到位，人事财税上帮助我们解决问题，是值得推荐的企业发展平台。</p>
+                </div>
+            </li>
+                <li style="float: left; width: 310px;">
+                    <div class="head">
+                        <a><img height="214" width="310" src="http://www.gongsibao.com/statics/images/home/picture-t1.jpg" alt="公司（工商）注册"></a>
+                    </div>
+                    <div class="con">
+                        <p><span>殷志伟</span>    <span>法务经理</span></p>
+                        <p>深圳，<a>500彩票网</a></p>
+                    </div>
+                    <div class="info">
+                        <p>公司宝让我更加专心于产品和团队，服务非常专业。和公司宝合作，省心！</p>
+                    </div>
+
+                </li>
+                <li style="float: left; width: 310px;">
+                    <div class="head">
+                        <a><img height="214" width="310" src="http://www.gongsibao.com/statics/images/home/picture-t2.jpg" alt="公司（工商）注册"></a>
+                    </div>
+                    <div class="con">
+                        <p><span>魏华</span>    <span>运维经理</span></p>
+                        <p>北京，<a>正和岛</a></p>
+                    </div>
+                    <div class="info">
+                        <p>中国商界第一高端人脉与网络社交平台认准公司宝，希望未来继续携手，蒸蒸日上。</p>
+                    </div>
+                </li><li class="clone" style="float: left; width: 310px;">
+                <div class="head">
+                    <a><img height="214" width="310" src="http://www.gongsibao.com/statics/images/home/picture-t3.jpg" alt="公司（工商）注册"></a>
+                </div>
+                <div class="con">
+                    <p><span>郭大兵</span>    <span>总经理</span></p>
+                    <p>香港，<a>八零互联</a></p>
+                </div>
+                <div class="info">
+                    <p>公司宝的团队很好，服务到位，人事财税上帮助我们解决问题，是值得推荐的企业发展平台。</p>
+                </div>
+            </li><li style="float: left; width: 310px;" class="clone">
+                    <div class="head">
+                        <a><img height="214" width="310" src="http://www.gongsibao.com/statics/images/home/picture-t1.jpg" alt="公司（工商）注册"></a>
+                    </div>
+                    <div class="con">
+                        <p><span>殷志伟</span>    <span>法务经理</span></p>
+                        <p>深圳，<a>500彩票网</a></p>
+                    </div>
+                    <div class="info">
+                        <p>公司宝让我更加专心于产品和团队，服务非常专业。和公司宝合作，省心！</p>
+                    </div>
+
+                </li><li style="float: left; width: 310px;" class="clone">
+                    <div class="head">
+                        <a><img height="214" width="310" src="http://www.gongsibao.com/statics/images/home/picture-t2.jpg" alt="公司（工商）注册"></a>
+                    </div>
+                    <div class="con">
+                        <p><span>魏华</span>    <span>运维经理</span></p>
+                        <p>北京，<a>正和岛</a></p>
+                    </div>
+                    <div class="info">
+                        <p>中国商界第一高端人脉与网络社交平台认准公司宝，希望未来继续携手，蒸蒸日上。</p>
+                    </div>
+                </li></ul></div></div>
+        </div>
+        <a class="prev"></a>
+    </div>
+</div>
+    
+<!--    广告-->
+    <div class="wrap">
+        <img src="images/banner1.jpg">
+    </div>
+<!-- 新闻动态-->
+    <div class="wrap">
+    <div class="news clear">
+        <div class="box float-left">
+            <div class="tit"><div class="tl" ><a href="">运营公告</a></div><div class="tr"><a href="">></a></div></div>
+            <div class="head clear">
+                <div class="img"><img src="images/news.png"></div>
+                <div class="txt">
+                    <h4 ><a>标题标题标题标题标题标题标题标题</a></h4>
+                    <p>内容描述内容描述内容描述内容描述内容描述内容描述内容描述</p>
+                </div>
+            </div>
+            <div class="list">
+            <ul><li><a>标题标题标题标题标题标题标题标题</a></li><li><a>标题标题标题标题标题标题标题标题</a></li><li><a>标题标题标题标题标题标题标题标题</a></li></ul>
+            </div>
+        
+        </div>
+        
+        <div class="box float-right">
+            <div class="tit"><div class="tl" ><a href="">运营公告</a></div><div class="tr"><a href="">></a></div></div>
+            <div class="head clear">
+                <div class="img"><img src="images/news.png"></div>
+                <div class="txt">
+                    <h4 ><a>标题标题标题标题标题标题标题标题</a></h4>
+                    <p>内容描述内容描述内容描述内容描述内容描述内容描述内容描述</p>
+                </div>
+            </div>
+            <div class="list">
+            <ul><li><a>标题标题标题标题标题标题标题标题</a></li><li><a>标题标题标题标题标题标题标题标题</a></li><li><a>标题标题标题标题标题标题标题标题</a></li></ul>
+            </div>
+        
+        </div>
+        </div>
+    </div>
+    
+<!-- 合作伙伴   -->
+    <div class="index-partner new-index-partner">
+    <span>
+       合作伙伴 ·
+        OUR PARTNER
+    </span>
+		<ul>
+			<li><img alt="公司注册合作伙伴" class="lazy" src="http://www.gongsibao.com/statics/images/home/partners/001.jpg" _src="http://www.gongsibao.com/statics/images/home/partners/001.jpg"></li>
+			<li><img alt="工商注册合作伙伴" class="lazy" src="http://www.gongsibao.com/statics/images/home/partners/002.jpg" _src="http://www.gongsibao.com/statics/images/home/partners/002.jpg"></li>
+			<li><img alt="公司注册合作伙伴" class="lazy" src="http://www.gongsibao.com/statics/images/home/partners/003.jpg" _src="http://www.gongsibao.com/statics/images/home/partners/003.jpg"></li>
+			<li><img alt="工商注册合作伙伴" class="lazy" src="http://www.gongsibao.com/statics/images/home/partners/004.jpg" _src="http://www.gongsibao.com/statics/images/home/partners/004.jpg"></li>
+			<li><img alt="公司注册合作伙伴" class="lazy" src="http://www.gongsibao.com/statics/images/home/partners/005.jpg" _src="http://www.gongsibao.com/statics/images/home/partners/005.jpg"></li>
+			<li><img alt="工商注册合作伙伴" class="lazy" src="http://www.gongsibao.com/statics/images/home/partners/006.jpg" _src="http://www.gongsibao.com/statics/images/home/partners/006.jpg"></li>
+			<li><img alt="公司注册合作伙伴" class="lazy" src="http://www.gongsibao.com/statics/images/home/partners/007.jpg" _src="http://www.gongsibao.com/statics/images/home/partners/007.jpg"></li>
+			<li><img alt="工商注册合作伙伴" class="lazy" src="http://www.gongsibao.com/statics/images/home/partners/008.jpg" _src="http://www.gongsibao.com/statics/images/home/partners/008.jpg"></li>
+			<li><img alt="公司注册合作伙伴" class="lazy" src="http://www.gongsibao.com/statics/images/home/partners/009.jpg" _src="http://www.gongsibao.com/statics/images/home/partners/009.jpg"></li>
+			<li><img alt="工商注册合作伙伴" class="lazy" src="http://www.gongsibao.com/statics/images/home/partners/010.jpg" _src="http://www.gongsibao.com/statics/images/home/partners/010.jpg"></li>
+			<li><img alt="公司注册合作伙伴" class="lazy" src="http://www.gongsibao.com/statics/images/home/partners/011.jpg" _src="http://www.gongsibao.com/statics/images/home/partners/011.jpg"></li>
+			<li><img alt="工商注册合作伙伴" class="lazy" src="http://www.gongsibao.com/statics/images/home/partners/012.jpg" _src="http://www.gongsibao.com/statics/images/home/partners/012.jpg"></li>
+			<li><img alt="公司注册合作伙伴" class="lazy" src="http://www.gongsibao.com/statics/images/home/partners/013.jpg" _src="http://www.gongsibao.com/statics/images/home/partners/013.jpg"></li>
+			<li><img alt="工商注册合作伙伴" class="lazy" src="http://www.gongsibao.com/statics/images/home/partners/014.jpg" _src="http://www.gongsibao.com/statics/images/home/partners/014.jpg"></li>
+			<li><img alt="公司注册合作伙伴" class="lazy" src="http://www.gongsibao.com/statics/images/home/partners/015.jpg" _src="http://www.gongsibao.com/statics/images/home/partners/015.jpg"></li>
+		</ul>
+	</div>
+<!--    底部-->
+      <div class=" foot-xian">
+          <div class="footer-con"><ul class="con1 clear">
+                <li>
+                    <i class="i1"></i>
+                    <p>
+                        <strong>全程服务</strong>
+                        <span>售前咨询，下单5分钟内响应，关键环节100%提醒</span>
+                    </p>
+                </li>
+                <li>
+                    <i class="i2"></i>
+                    <p>
+                        <strong>品质保障</strong>
+                        <span>所有产品保证服务质量由专业人士进行操作</span>
+                    </p>
+                </li>
+                <li>
+                    <i class="i3"></i>
+                    <p>
+                        <strong>多元产品</strong>
+                        <span>提供TMT/文创等20多项<br>领域服务支持</span>
+
+                    </p>
+                </li>
+                <li>
+                    <i class="i4"></i>
+                    <p>
+                        <strong>安全送到</strong>
+                        <span>办理完成后所有材料精心包装，快递直达</span>
+                    </p>
+                </li>
+                <li>
+                    <i class="i5"></i>
+                    <p>
+                        <strong>信息保密</strong>
+                        <span>所有客户信息严格保密，保护客户信息免遭外泄</span>
+                    </p>
+                </li>
+            </ul></div>
+    </div>
+    <div class="footer-warp">
+        
+        
+        <div class="footer-link clear">
+            
+            <ul class="clear">
+                                                <li><a href="http://baidu.com" rel="nofollow" title="百度" target="_blank">百度</a></li>
+                                <li><a href="http://www.sinotone.net" rel="nofollow" title="汉唐咨询" target="_blank">汉唐咨询</a></li>
+                                <li><a href="http://www.sinotone.net.cn" rel="nofollow" title="汉唐企业加速器" target="_blank">汉唐企业加速器</a></li>
+                                <li><a href="http://www.callcentermkt.com" rel="nofollow" title="呼叫中心" target="_blank">呼叫中心</a></li>
+                                <li><a href="http://www.sinotone.cc" rel="nofollow" title="网络游戏" target="_blank">网络游戏</a></li>
+                                <li><a href="http://www.dianxinzengzhi.com" rel="nofollow" title="增值电信" target="_blank">增值电信</a></li>
+                                <li><a href="http://www.icpmiit.com/" rel="nofollow" title="增值电信经营许可证" target="_blank">增值电信经营许可证</a></li>
+                                <li><a href="http://www.wenwangwendb.com/" rel="nofollow" title="网络文化经营许可证" target="_blank">网络文化经营许可证</a></li>
+                                <li><a href="http://www.icpbeijing.com" rel="nofollow" title="北京ICP" target="_blank">北京ICP</a></li>
+                                <li><a href="http://www.sinoccnt.com" rel="nofollow" title="游戏备案" target="_blank">游戏备案</a></li>
+                                <li><a href="http://www.qncye.com/" rel="nofollow" title="青年创业网" target="_blank">青年创业网</a></li>
+                                <li><a href="http://www.rceo.cn/" rel="nofollow" title="希鸥网" target="_blank">希鸥网</a></li>
+                                <li><a href="http://www.nash.work/" rel="nofollow" title="纳什空间" target="_blank">纳什空间</a></li>
+                                            </ul>
+        </div>
+        <div class="footer-con">
+            
+
+            <div class="con2 clear">
+                <ul class="l">
+                    <li>
+                        <dl>
+                            <dt>公司宝</dt>
+                            <dd><a href="http://www.gongsibao.com/zxdt/" rel="nofollow"><i></i>最新动态</a></dd>
+                            <dd><a href="http://www.gongsibao.com/about/" rel="nofollow"><i></i>关于我们</a></dd>
+                            <dd><a href="http://www.gongsibao.com/about/lxwm/" rel="nofollow"><i></i>联系我们</a></dd>
+                            <dd><a href="http://www.gongsibao.com/about/jrwm/" rel="nofollow"><i></i>加入我们</a></dd>
+                        </dl>
+                    </li>
+                      
+                                        <li>
+                        <dl>
+                            <dt>订单服务</dt>
+                                                                                    <dd><a href="http://www.gongsibao.com/help/ddfw/detail/8.html" rel="nofollow" title="索取发票"><i></i>索取发票</a></dd>
+                                                        <dd><a href="http://www.gongsibao.com/help/ddfw/detail/7.html" rel="nofollow" title="退款说明"><i></i>退款说明</a></dd>
+                                                        <dd><a href="http://www.gongsibao.com/help/ddfw/detail/6.html" rel="nofollow" title="支付方式"><i></i>支付方式</a></dd>
+                                                                                </dl>
+                    </li>
+                                        <li>
+                        <dl>
+                            <dt>特色服务</dt>
+                                                                                    <dd><a href="http://www.gongsibao.com/help/tsfw/detail/11.html" rel="nofollow" title="精英团队"><i></i>精英团队</a></dd>
+                                                        <dd><a href="http://www.gongsibao.com/help/tsfw/detail/10.html" rel="nofollow" title="一对一贴心服务"><i></i>一对一贴心服务</a></dd>
+                                                        <dd><a href="http://www.gongsibao.com/help/tsfw/detail/9.html" rel="nofollow" title="精美包装"><i></i>精美包装</a></dd>
+                                                                                </dl>
+                    </li>
+                                        <li>
+                        <dl>
+                            <dt>售后服务</dt>
+                                                                                    <dd><a href="http://www.gongsibao.com/help/shff/detail/13.html" rel="nofollow" title="线下服务中心"><i></i>线下服务中心</a></dd>
+                                                        <dd><a href="http://www.gongsibao.com/help/shff/detail/12.html" rel="nofollow" title="售后服务政策"><i></i>售后服务政策</a></dd>
+                                                                                </dl>
+                    </li>
+                      
+                      
+                    <li>
+                        <dl>
+                            <dt>热门产品</dt>
+                            <dd><a href="http://www.gongsibao.com/product_199/1.html"><i></i>公司注册</a></dd>
+                            <dd><a href="http://www.gongsibao.com"><i></i>工商注册</a></dd>
+                            <dd><a href="http://www.gongsibao.com/product_214/1.html"><i></i>增值电信</a></dd>
+                            <dd><a href="http://www.gongsibao.com/product_189/1.html"><i></i>知识产权</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+
+                <ul class="r">
+                    <li class="l1"></li>
+                    <li class="l2">
+                        <p><i class="i1"></i><span><strong class="s1">4006-798-999</strong>24小时客服电话</span></p>
+                        <p><i class="i2"></i><span><strong class="s2">在线客服</strong>服务时段 8:00-20:00</span></p>
+                        <p><i class="i3"></i><span><strong class="s3">商务合作</strong>hezuo@gongsibao.com</span></p>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        
+        <div class="footer-bq">
+            Copyright © 1998-2015 gongsibao All Rights Reserved 版权所有：汉唐信通（北京）科技有限公司  京ICP证150505号 Beta 3.0
+        </div>
+    </div>
+    <script type="text/javascript">function reveal(gid) {
+
+		$("#g_id"+gid).show();
+	}
+
+function hide(gid) {
+		$("#g_id"+gid).hide();
+	}
+
+function revealcat(pid) {
+
+		$("#cat_id"+pid).show();
+	}
+
+function hidecat(pid) {
+		$("#cat_id"+pid).hide();
+	}
+
+function ToggleMenu(obj,content){
+	obj.hover(function(){
+		content.show()
+		obj.addClass("showmenu")
+	},function(){
+		content.hide()
+		obj.removeClass("showmenu")
+	})
+}</script>
+</body>
+</html>
