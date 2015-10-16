@@ -1,5 +1,4 @@
-﻿var crmUrl = "http://crm.gongsibao.com";
-//document.domain = 'gongsibao.com';
+
 $(document).ready(function($){	//懒加载
 	$(".lazy").scrollLoading();
 
